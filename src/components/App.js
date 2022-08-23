@@ -1,4 +1,5 @@
 import React from "react";
+import ProgramSchedule from "./ProgramSchedule";
 
 const App = () => {
     return (
@@ -12,7 +13,7 @@ const App = () => {
 
             {/*Articles*/}
 
-            {/*ProgramSchedule*/}
+            <ProgramSchedule/>
 
             {/*Registration*/}
         </div>
