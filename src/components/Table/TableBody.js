@@ -1,20 +1,22 @@
 import React from "react";
+import "./TableBody.css";
 
 const TableBody = ({tableContent}) => {
     // Create table rows from the table content
     const renderTableRows = () => {
-        return tableContent.map(content => {
+        return tableContent.map((content, index) => {
             return (
-                <tr>
-                    <td>{content.start}</td>
-                    <td>{content.end}</td>
-                    <td>
-                        <div>{content.auditorium.roomNo}</div>
-                        <div>{content.auditorium.hallName}</div>
+                <tr key={index} className="table-body-row">
+                    <td className={"time"}>{content.start}</td>
+                    <td className={"time"}>{content.end}</td>
+                    <td className="auditorium">
+                        <div className="roomNo">{content.auditorium.roomNo}</div>
+                        <div className="hall-name">{content.auditorium.hallName}</div>
                     </td>
-                    <td>
-                        <div>{content.details.topic} (Chair: {content.details.chair})</div>
-                        <div>{content.details.speakers}</div>
+                    <td className="details">
+                        <div className="topic">{content.details.topic} <span className='chair'>(Chair: {content.details.chair})</span>
+                        </div>
+                        <div className="speakers">{content.details.speakers}</div>
                     </td>
                 </tr>
             );

@@ -1,0 +1,30 @@
+.time {
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #EFEFEF;
+}
+
+.hall-name {
+    font-style: italic;
+    font-size: 14px;
+
+}
+
+.speakers {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.details .topic {
+    font-weight: bold;
+}
+.details .chair {
+    font-style: italic;
+    font-weight: normal;
+}
