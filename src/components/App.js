@@ -1,5 +1,5 @@
 import React from "react";
-import ProgramSchedule from "./ProgramSchedule";
+import Videos from "./Videos";
 
 const App = () => {
     return (
@@ -9,11 +9,11 @@ const App = () => {
 
             {/*HomePage*/}
 
-            {/*Videos*/}
+            <Videos/>
 
             {/*Articles*/}
 
-            <ProgramSchedule/>
+            {/*ProgramSchedule*/}
 
             {/*Registration*/}
         </div>
