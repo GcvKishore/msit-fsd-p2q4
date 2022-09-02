@@ -1,0 +1,10 @@
+.row{
+    display : flex;
+    justify-content: center ;
+    float : left;
+    padding : 25px;
+    color: #921920;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}

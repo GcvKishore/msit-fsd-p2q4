@@ -1,4 +1,5 @@
 import React from "react";
+import Videos from "./Videos";
 import Articles from "./Articles";
 import ProgramSchedule from "./ProgramSchedule";
 
@@ -10,11 +11,11 @@ const App = () => {
 
             {/*HomePage*/}
 
-            {/*Videos*/}
+            <Videos/>
 
             <Articles/>
 
-            <ProgramSchedule/>
+            {/*ProgramSchedule*/}
 
             {/*Registration*/}
         </div>
