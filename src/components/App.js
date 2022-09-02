@@ -1,5 +1,7 @@
 import React from "react";
 import Videos from "./Videos";
+import Articles from "./Articles";
+import ProgramSchedule from "./ProgramSchedule";
 
 const App = () => {
     return (
@@ -11,7 +13,7 @@ const App = () => {
 
             <Videos/>
 
-            {/*Articles*/}
+            <Articles/>
 
             {/*ProgramSchedule*/}
 
