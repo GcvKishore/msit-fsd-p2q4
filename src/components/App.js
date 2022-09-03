@@ -1,7 +1,8 @@
 import React from "react";
-import Videos from "./Videos";
-import Articles from "./Articles";
-import ProgramSchedule from "./ProgramSchedule";
+// import Videos from "./Videos";
+// import Articles from "./Articles";
+// import ProgramSchedule from "./ProgramSchedule";
+import Registration from "./Registration";
 
 const App = () => {
     return (
@@ -11,13 +12,13 @@ const App = () => {
 
             {/*HomePage*/}
 
-            <Videos/>
+            {/*Videos*/}
 
-            <Articles/>
+            {/*Articles*/}
 
             {/*ProgramSchedule*/}
 
-            {/*Registration*/}
+            <Registration/>
         </div>
     );
 };
