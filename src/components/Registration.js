@@ -24,22 +24,22 @@ const Registration = () => {
             <form onSubmit={handleFinalSubmit}>
                 <div className="Email">
                     <label> Email Address* </label>
-                    <input type="email" name="Email" value={Email} onChange={handleInputChange}/>
+                    <input type="email" name="Email" value={Email} onChange={handleInputChange} required/>
                 </div>
                 <div className="Name">
                     <div className='First'>
                         <label> First Name* </label>
-                        <input type="text" name="First" value={First} onChange={handleInputChange}/>
+                        <input type="text" name="First" value={First} onChange={handleInputChange} required/>
                     </div>
                     <div className='Last'>
                         <label> Last Name* </label>
-                        <input type="text" name="Last" value={Last} onChange={handleInputChange}/>
+                        <input type="text" name="Last" value={Last} onChange={handleInputChange} required/>
                     </div>
                 </div>
                 <div className="Phone">
                       <div className='Country'>
                         <label> Country* </label>
-                        <select name="Country" placeholder="Select Country Code" value={Country} onChange={handleInputChange}>
+                        <select name="Country" placeholder="Select Country Code" value={Country} onChange={handleInputChange} required>
                         <option>Select Country Code*</option> 
                         <option data-countrycode="US" value="1">USA (+1)</option>
                         <option data-countrycode="DZ" value="213">Algeria (+213)</option>
@@ -259,7 +259,7 @@ const Registration = () => {
                       </div>
                      <div className='Phone-Number'>
                         <label> Phone Number* </label>
-                        <input type="text" name="Phone" value= {Phone} onChange={handleInputChange}/>
+                        <input type="text" name="Phone" value= {Phone} onChange={handleInputChange} required/>
                       </div>
                 </div>
 
