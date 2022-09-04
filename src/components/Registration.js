@@ -40,7 +40,7 @@ const Registration = () => {
                       <div className='Country'>
                         <label> Country* </label>
                         <select name="Country" placeholder="Select Country Code" value={Country} onChange={handleInputChange} required>
-                        <option>Select Country Code*</option> 
+                        <option value= "">Select Country Code*</option> 
                         <option data-countrycode="US" value="1">USA (+1)</option>
                         <option data-countrycode="DZ" value="213">Algeria (+213)</option>
                         <option data-countrycode="AD" value="376">Andorra (+376)</option>
