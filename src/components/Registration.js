@@ -5,6 +5,7 @@ const Registration = () => {
     const initialInputState = {Email: "", First: "", Last: "", Country: "", Phone: "" };
     const[eachInput, setEachInput] = useState(initialInputState);
     const{Email,First,Last,Country,Phone} = eachInput
+    const [userRegistration, setUserRegistration] = useState([]);
 
     const handleInputChange = e =>{
         setEachInput({...eachInput, [e.target.name]: e.target.value})
@@ -12,26 +13,34 @@ const Registration = () => {
 
     const handleFinalSubmit = e =>{
         e.preventDefault();
+        setUserRegistration([...userRegistration, eachInput])
+        console.log(userRegistration)
         setEachInput(initialInputState)
-
     };
     
     return(
         <div className="registration">
-            <h2> P2Q4 Symposium </h2>
+            <h1> P2Q4 Symposium </h1>
             <form onSubmit={handleFinalSubmit}>
-                <div>
-                    <label> Email Address* <input type="email" name="Email" value={Email} onChange={handleInputChange}/></label>
+                <div className="Email">
+                    <label> Email Address* </label>
+                    <input type="email" name="Email" value={Email} onChange={handleInputChange}/>
                 </div>
-                <div>
-                    <label> First Name* <input type="text" name="First" value={First} onChange={handleInputChange}/></label>
+                <div className="Name">
+                    <div className='First'>
+                        <label> First Name* </label>
+                        <input type="text" name="First" value={First} onChange={handleInputChange}/>
+                    </div>
+                    <div className='Last'>
+                        <label> Last Name* </label>
+                        <input type="text" name="Last" value={Last} onChange={handleInputChange}/>
+                    </div>
                 </div>
-                <div>
-                    <label> Last Name* <input type="text" name="Last" value={Last} onChange={handleInputChange}/></label>
-                </div>
-                <div>
-                    <label> Country Code* <input type="dropdown" name="Country" value={Country} onChange={handleInputChange}/></label>
-                        <select> 
+                <div className="Phone">
+                      <div className='Country'>
+                        <label> Country* </label>
+                        <select name="Country" placeholder="Select Country Code" value={Country} onChange={handleInputChange}>
+                        <option>Select Country Code*</option> 
                         <option data-countrycode="US" value="1">USA (+1)</option>
                         <option data-countrycode="DZ" value="213">Algeria (+213)</option>
                         <option data-countrycode="AD" value="376">Andorra (+376)</option>
@@ -247,13 +256,18 @@ const Registration = () => {
                         <option data-countrycode="ZM" value="260">Zambia (+260)</option>
                         <option data-countrycode="ZW" value="263">Zimbabwe (+263)</option>
                         </select>
+                      </div>
+                     <div className='Phone-Number'>
+                        <label> Phone Number* </label>
+                        <input type="text" name="Phone" value= {Phone} onChange={handleInputChange}/>
+                      </div>
                 </div>
-                <div>
-                    <label> Phone Number* <input type="text" name="Phone" value= {Phone} onChange={handleInputChange}/></label>
+
+                <span class="label"><i>Note: Fields marked with * are mandatory.</i></span>  
+
+                <div className="container">
+                    <button class="button" type="submit">Register</button>
                 </div>
-                <button>
-                    Register
-                </button>
             </form>
         </div>
 
