@@ -1,5 +1,5 @@
 import  React from "react";
-import Sections from "./article_table/table_body";
+import Sections from "./table_body";
 
 const article_data = [
     {
