@@ -3,12 +3,15 @@
     text-align: center;
 }
 .row{
-    display : flex;
+    display : block;
     justify-content: center ;
     float : left;
     padding : 25px;
-    color: #921920;
-    text-align: center;
     align-items: center;
     margin: auto;
+}
+
+.sub-heading{
+    color: #921920;
+    text-align: center;
 }
