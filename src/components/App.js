@@ -5,11 +5,15 @@ import Articles from "./HistoricalDocuments/Articles";
 import Videos from "./Videos/Videos";
 import Header from "./Header/Header";
 import Route from "./Route";
+import Home from "./Home/Home";
 
 const App = () => {
     return (
         <div>
             <Header/>
+            <Route path="/">
+                <Home/>
+            </Route>
             <Route path="/videos">
                 <Videos/>
             </Route>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./TableBody.css";
+import "./ProgramSchedule.css";
 
 const TableBody = ({tableContent}) => {
     // Create table rows from the table content

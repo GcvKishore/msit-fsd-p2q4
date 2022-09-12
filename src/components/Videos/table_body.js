@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './table_body.css';
+import './Videos.css';
 const Sections = ({videoData}) => {
     return (
                 <div className="row">
