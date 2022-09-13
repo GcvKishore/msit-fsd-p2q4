@@ -82,6 +82,11 @@ select::after {
     color: white;
     height: 39px;
     width: 172px;
+    border: #921920;
+}
+
+.button:hover{
+    background-color: #af2c35;
 }
 
 @media only screen and (max-width: 900px) {

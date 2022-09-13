@@ -1,3 +1,10 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 .card-box{
     background-color: #F6F6F6;
     margin: 20px;
@@ -37,4 +44,9 @@
     text-align: center;
     background-color: #921920;
     color: #FFFFFF;
+    border: #921920;
+}
+
+.btn:hover{
+    background-color: #af2c35;
 }

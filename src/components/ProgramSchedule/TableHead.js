@@ -1,5 +1,5 @@
 import React from "react";
-import "./TableHead.css";
+import "./ProgramSchedule.css";
 
 const TableHead = ({headers}) => {
     const renderHeaders = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import Sections from "./table_body";
-import "./Videos.css"
+import Sections from "./video_table";
+import "./Videos.css";
 const videoData=[
     {
         id : 1,
@@ -55,7 +55,7 @@ const video=() =>{
     return(
         <div className="heading">
             <br/>
-            <h2>"Must Watch Recordings"</h2>
+            <h2>Must Watch Recordings</h2>
             <br/>
             {
                 videoData.map((props,index) => {
