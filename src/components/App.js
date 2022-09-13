@@ -6,6 +6,7 @@ import Videos from "./Videos/Videos";
 import Header from "./Header/Header";
 import Route from "./Route";
 import Home from "./Home/Home";
+import RegisteredDetails from "./RegistrationDetails/RegistrationDetails";
 
 const App = () => {
     return (
@@ -25,6 +26,9 @@ const App = () => {
             </Route>
             <Route path="/register">
                 <Registration/>
+            </Route>
+            <Route path="/registered-users">
+                <RegisteredDetails/>
             </Route>
         </div>
     );
