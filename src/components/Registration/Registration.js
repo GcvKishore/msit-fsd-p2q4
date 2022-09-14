@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./Registration.css";
-
+import axios from "axios";
 const Registration = () => {
     const initialInputState = {Email: "", First: "", Last: "", Country: "", Phone: "" };
     const[eachInput, setEachInput] = useState(initialInputState);
@@ -11,11 +11,18 @@ const Registration = () => {
         setEachInput({...eachInput, [e.target.name]: e.target.value})
     };
 
-    const handleFinalSubmit = e =>{
+    const handleFinalSubmit = async(e) =>{
         e.preventDefault();
-        setUserRegistration([...userRegistration, eachInput])
-        console.log(userRegistration)
-        setEachInput(initialInputState)
+        const dbUrl = "https://eoc84zwxk2.execute-api.ap-south-1.amazonaws.com/production/data";
+        const userDetails = JSON.stringify({
+            emailID: Email,
+            firstName: First,
+            lastName: Last,
+            phoneNumber: Phone,
+        });
+        await axios.post(dbUrl, userDetails);
+        setUserRegistration([...userRegistration, eachInput]);
+        setEachInput(initialInputState);
     };
     
     return(
@@ -263,10 +270,10 @@ const Registration = () => {
                       </div>
                 </div>
 
-                <span class="label"><i>Note: Fields marked with * are mandatory.</i></span>  
+                <span className="label"><i>Note: Fields marked with * are mandatory.</i></span>  
 
                 <div className="container">
-                    <button class="button" type="submit">Register</button>
+                    <button className="button" type="submit">Register</button>
                 </div>
             </form>
         </div>
