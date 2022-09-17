@@ -13,7 +13,7 @@ const Registration = () => {
 
     const handleFinalSubmit = async(e) =>{
         e.preventDefault();
-        const dbUrl = "https://eoc84zwxk2.execute-api.ap-south-1.amazonaws.com/production/data";
+        const dbUrl = "https://7vhxgznjt5.execute-api.ap-south-1.amazonaws.com/production/data";
         const userDetails = JSON.stringify({
             emailID: Email,
             firstName: First,
