@@ -35,7 +35,6 @@ label{
 }
 input {
     width: 100%;
-    padding: 0;
     margin: 0;
     padding: 8px;
 }
@@ -107,3 +106,14 @@ select::after {
     text-align: center;
     justify-content:center;
 }
+
+
+.row_full{
+    width: 100vw;
+    text-align: center;
+}
+
+.row_button{
+    width: 100%;
+}
+

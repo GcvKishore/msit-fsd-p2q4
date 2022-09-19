@@ -283,16 +283,16 @@ const Registration = () => {
         }
         else{
         return (
-            <div className="row">
+            <div className="row row_full">
                 <div className="col content-center">
                     <img
                         src="https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/success-green-check-mark-icon.png" alt="tick" width="300px"
                     />
                     <p>Congratulations, You have registered successfully..</p>
                     <hr/>
-                    <div className="row">
-                        <div className="col content-center">
-                            <button className="btn" onClick={() => setUserRegistration(false)}>
+                    <div className="row_button">
+                        <div className="content-center">
+                            <button className="button" onClick={() => setUserRegistration(false)}>
                                 Back to registrations
                             </button>
                         </div>
