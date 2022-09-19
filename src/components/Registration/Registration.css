@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+.registration{
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+h1{
+    text-align: center;
+}
+
+.Email{
+    width: 100%;
+    padding-bottom: 30px;
+    margin: 8px 0;
+  
+}
+
+label{
+    display: block;
+    padding-bottom: 12px;
+}
+
+.Name{
+    display : flex;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.Name .First {
+    padding-right: 30px;
+    width: 50%;
+}
+input {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+}
+
+.Name .Last{
+    width: 50%;
+}
+
+.Phone{
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+select{
+    width: 100%;
+    height: 35px;
+    text-indent: 5px;
+}
+select::after {
+    padding-right: 10px;
+    background-position-x: 10px;
+}
+
+.Phone .Country{
+    width: 50%;
+    padding-right: 30px;
+}
+
+.Phone .Phone-Number{
+    width: 50%;
+}
+
+.label{
+    color:red;
+}
+.container{
+    text-align: center;
+}
+
+.button{
+    background-color: #921920;
+    margin-top: 20px;
+    color: white;
+    height: 39px;
+    width: 172px;
+    border: #921920;
+}
+
+.button:hover{
+    background-color: #af2c35;
+}
+
+@media only screen and (max-width: 900px) {
+    .registration {
+        padding: 50px 0;
+        width: 100%;
+    }
+}
+
+.content-center {
+    text-align: center;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content:center;
+}
+
+
+.row_full{
+    width: 100vw;
+    text-align: center;
+}
+
+.row_button{
+    width: 100%;
+}
+

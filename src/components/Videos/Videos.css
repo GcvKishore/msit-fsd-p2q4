@@ -1,0 +1,17 @@
+.heading{
+    color: #000000;
+    text-align: center;
+}
+.row{
+    display : block;
+    justify-content: center ;
+    float : left;
+    padding : 5%;
+    align-items: center;
+    margin: auto;
+}
+
+.sub-heading{
+    color: #921920;
+    text-align: center;
+}
