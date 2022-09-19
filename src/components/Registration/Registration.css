@@ -103,4 +103,7 @@ select::after {
 .col {
     flex: 1;
     padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content:center;
 }
