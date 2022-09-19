@@ -9,7 +9,7 @@ const RegisteredDetails = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const database_url = "https://7vhxgznjt5.execute-api.ap-south-1.amazonaws.com/production/data";
+            const database_url = "https://el1qw8gib5.execute-api.ap-south-1.amazonaws.com/production/data";
             const response = await axios.get(database_url);
             setUsers(response.data);
         };
