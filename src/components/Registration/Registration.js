@@ -267,7 +267,7 @@ const Registration = () => {
                               </div>
                              <div className='Phone-Number'>
                                 <label> Phone Number* </label>
-                                <input type="text" name="Phone" value= {Phone} onChange={handleInputChange} required/>
+                                <input type="number" name="Phone" value= {Phone} onChange={handleInputChange} required/>
                               </div>
                         </div>
         
